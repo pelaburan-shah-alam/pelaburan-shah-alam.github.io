@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ms-MY">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="selamat datang">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Pelaburan Shah Alam</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Pelaburan-Shah-Alam.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 2.24.4, nicepage.com">
+    <style> /* The MIT License (MIT) Copyright (c) 2014 Toby */
+/* demo only */
+.flex { display: flex; }
+.align-center { justify-content: center; }
+.align-vert,.align-vert.align-center { align-items: center; }
+/* end demo */
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px 20px 0px 20px;
+  margin: 12px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 0.3s;
+}
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+.modal__close--x {
+  position: absolute;
+  line-height: 19px;
+  top: 10px;
+  right: 10px; 
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Open Sans", "Arial","sans-serif";
+  opacity: .2;
+}
+.modal {
+  text-align: center;
+} </style>
+    <style> .modal__container [class*="section"] {
+        display: block !important;
+        overflow: hidden;
+    }
+    .modal__close--x {
+        z-index: 1;
+    } </style>
+    <script> var buttonSelector = 'a[href*="-popup"]',
+    parseId = function (href) { return href.replace('-popup', '').replace('#', ''); };
+window.onload = function () {
+    $('body').on('click', buttonSelector, function (event) {
+        var id = parseId(event.currentTarget.getAttribute('href'));
+        var modalId = 'modal-' + id;
+        if ($('#' + modalId).length === 0) {
+            $('body').append('<div class="flex align-center align-vert modal modal--align" id="' + modalId + '">' +
+                '    <div class="modal__container">' +
+                '        <span class="modal__close modal__close--x" aria-hidden="true">×</span>' +
+                '        ' + document.getElementById(id).outerHTML +
+                '    </div>' +
+                '</div>');      
+        }
+        $('#' + modalId).addClass('modal--show');
+    });
+    var closeModal = function (modal) {
+        modal.removeClass('modal--show');
+        modal.addClass('modal--hide');
+        var afterAnimation = function () {
+            modal.removeClass('modal--hide');   
+        };
+        // This listens for the CSS animations to finish and then hides the modal
+        modal[0].addEventListener("webkitAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("oAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("msAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("animationend", afterAnimation, false);
+        setTimeout(afterAnimation, 400);
+    }
+    // Close the modal with any element with class 'modal__close'
+    $('body').on('click', '.modal__close', function (e) {
+        closeModal($(e.currentTarget).closest('.modal'));
+    });
+    // Click outside of the modal and close it
+    window.onclick = function (e) {
+        if ($(e.target).is('.modal')) {
+            closeModal($(e.target));
+        }
+    }
+    // Use the escape key to close modal
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode == 27 && $('.modal--show').length === 1) {
+            closeModal($('.modal--show'));
+        }
+    }
+};
+document.addEventListener("DOMContentLoaded", function(event) {
+    var buttons = document.querySelectorAll(buttonSelector);
+    for (var i = 0; i < buttons.length; i++) {
+        var section = document.getElementById(parseId(buttons[i].getAttribute('href')));
+        if (section) {
+            section.style.display = 'none';
+        }       
+    }
+}); </script>
+    <link rel="icon" href="images/favicon.png">
+    
+    
+    
+    
+    
+    
+    
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Oswald:200,300,400,500,600,700|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Candal:400">
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Pelaburan Shah Alam",
+		"url": "index.html",
+		"logo": "images/13.png",
+		"sameAs": [
+				"#"
+		]
+}</script>
+    <meta property="og:title" content="Pelaburan Shah Alam">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#478ac9">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+   
+<style>
+/* The MIT License (MIT) Copyright (c) 2014 Toby */
+/* demo only */
+.flex { display: flex; }
+.align-center { justify-content: center; }
+.align-vert,.align-vert.align-center { align-items: center; }
+/* end demo */
+
+.modal { display: none; }
+.modal--show,
+.modal--hide { display: flex; } /* classes fired by js for animation control */
+
+/* This is on the wrapper for the whole modal */
+.modal--align {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px 20px 0px 20px;
+  margin: 12px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+/* As there is no href to avoid the hash being added to the URL when clicked we add a pointer */
+/* This 'x' is hidden from screen readers as there is an accessible close button in the modal */
+.modal__close--x:hover {
+  cursor: pointer;
+}
+
+/* Animations */
+/* Open */
+.modal.modal--show {
+  animation: modal-open 0.3s;
+}
+
+@keyframes modal-open {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+/* Close */
+.modal.modal--hide {
+  animation: modal-close 0.3s;
+}
+
+@keyframes modal-close {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+.modal__close--x {
+  position: absolute;
+  line-height: 19px;
+  top: 10px;
+  right: 10px; 
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  font-family: "Open Sans", "Arial","sans-serif";
+  opacity: .2;
+}
+
+.modal {
+  text-align: center;
+}
+</style>
+
+<style>
+    .modal__container [class*="section"] {
+        display: block !important;
+        overflow: hidden;
+    }
+    .modal__close--x {
+        z-index: 1;
+    }
+	
+	
+	
+	
+	
+</style>
+
+<script>
+var buttonSelector = 'a[href*="-popup"]',
+    parseId = function (href) { return href.replace('-popup', '').replace('#', ''); };
+window.onload = function () {
+    $('body').on('click', buttonSelector, function (event) {
+        var id = parseId(event.currentTarget.getAttribute('href'));
+
+        var modalId = 'modal-' + id;
+        if ($('#' + modalId).length === 0) {
+            $('body').append('<div class="flex align-center align-vert modal modal--align" id="' + modalId + '">' +
+                '    <div class="modal__container">' +
+                '        <span class="modal__close modal__close--x" aria-hidden="true">×</span>' +
+                '        ' + document.getElementById(id).outerHTML +
+                '    </div>' +
+                '</div>');      
+        }
+        $('#' + modalId).addClass('modal--show');
+    });
+
+
+    var closeModal = function (modal) {
+        modal.removeClass('modal--show');
+        modal.addClass('modal--hide');
+
+        var afterAnimation = function () {
+            modal.removeClass('modal--hide');   
+        };
+
+        // This listens for the CSS animations to finish and then hides the modal
+        modal[0].addEventListener("webkitAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("oAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("msAnimationEnd", afterAnimation, false);
+        modal[0].addEventListener("animationend", afterAnimation, false);
+        setTimeout(afterAnimation, 400);
+    }
+
+    // Close the modal with any element with class 'modal__close'
+    $('body').on('click', '.modal__close', function (e) {
+        closeModal($(e.currentTarget).closest('.modal'));
+    });
+
+
+    // Click outside of the modal and close it
+    window.onclick = function (e) {
+        if ($(e.target).is('.modal')) {
+            closeModal($(e.target));
+        }
+    }
+
+    // Use the escape key to close modal
+    document.onkeyup = function (e) {
+        e = e || window.event;
+        if (e.keyCode == 27 && $('.modal--show').length === 1) {
+            closeModal($('.modal--show'));
+        }
+    }
+};
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    var buttons = document.querySelectorAll(buttonSelector);
+    for (var i = 0; i < buttons.length; i++) {
+        var section = document.getElementById(parseId(buttons[i].getAttribute('href')));
+        if (section) {
+            section.style.display = 'none';
+        }       
+    }
+});
+</script></head>
+  <body data-home-page="Pelaburan-Shah-Alam.html" data-home-page-title="Pelaburan Shah Alam" class="u-body u-palette-2-dark-2"><header class="u-clearfix u-header u-palette-2-base u-header" id="sec-40c6"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="http://www.mbsa.gov.my/ms-my/Halaman/homepage.aspx" class="u-image u-logo u-image-1" title="MBSA">
+          <img src="images/13.png" class="u-logo-image u-logo-image-1" data-image-width="124.258">
+        </a>
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse u-custom-font u-font-source-sans-pro" style="font-size: 1rem; letter-spacing: 1px; font-weight: 700;">
+            <a class="u-active-palette-3-base u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-hover-palette-1-dark-1 u-nav-link u-text-active-grey-75 u-text-hover-white u-text-white" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-custom-font u-font-source-sans-pro u-nav u-spacing-2 u-text-white u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-palette-3-base u-border-active-grey-90 u-border-hover-grey-50 u-button-style u-hover-palette-1-dark-1 u-nav-link u-text-active-grey-75 u-text-hover-white u-text-white" href="Pelaburan-Shah-Alam.html" style="padding: 10px 20px;">UTAMA</a>
+</li><li class="u-nav-item"><a class="u-active-palette-3-base u-border-active-grey-90 u-border-hover-grey-50 u-button-style u-hover-palette-1-dark-1 u-nav-link u-text-active-grey-75 u-text-hover-white u-text-white" href="SHAH-ALAM.html" style="padding: 10px 20px;">SHAH ALAM</a>
+</li><li class="u-nav-item"><a class="u-active-palette-3-base u-border-active-grey-90 u-border-hover-grey-50 u-button-style u-hover-palette-1-dark-1 u-nav-link u-text-active-grey-75 u-text-hover-white u-text-white" href="PROSEDUR.html" style="padding: 10px 20px;">PROSEDUR</a>
+</li><li class="u-nav-item"><a class="u-active-palette-3-base u-border-active-grey-90 u-border-hover-grey-50 u-button-style u-hover-palette-1-dark-1 u-nav-link u-text-active-grey-75 u-text-hover-white u-text-white" href="MENGENAI-KAMI.html" style="padding: 10px 20px;">MENGENAI KAMI</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-menu-close"></div>
+              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Pelaburan-Shah-Alam.html" style="padding: 10px 20px;">UTAMA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="SHAH-ALAM.html" style="padding: 10px 20px;">SHAH ALAM</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="PROSEDUR.html" style="padding: 10px 20px;">PROSEDUR</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="MENGENAI-KAMI.html" style="padding: 10px 20px;">MENGENAI KAMI</a>
+</li></ul>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-align-left u-clearfix u-palette-3-base u-section-1" id="sec-3a49">
+      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    </section>
+    <section class="u-carousel u-slide u-valign-middle-sm u-valign-middle-xs u-block-e534-1" id="carousel_46a2" data-interval="5000" data-u-ride="carousel">
+      <ol class="u-absolute-hcenter u-carousel-indicators u-block-e534-5">
+        <li data-u-target="#carousel_46a2" class="u-active u-border-1 u-border-grey-75 u-palette-2-light-1 u-shape-rectangle" data-u-slide-to="0" style="height: 3px; width: 30px;"></li>
+      </ol>
+      <div class="u-carousel-inner" role="listbox">
+        <div class="u-active u-carousel-item u-clearfix u-image u-section-2-1" data-image-width="1600" data-image-height="1066">
+          <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-text u-text-white u-title u-text-1" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">selamat datang</h1>
+            <h1 class="u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-text u-text-default u-text-white u-title u-text-2" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">KE</h1>
+            <h1 class="u-align-right u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-text u-text-palette-3-light-1 u-title u-text-3" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">MAKLUMAT PELABURAN</h1>
+            <h1 class="u-align-right u-color-scheme-u10 u-color-style-multicolor-1 u-custom-font u-text u-text-palette-2-base u-title u-text-4" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down">SHAH ALAM</h1>
+          </div>
+        </div>
+      </div>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-e534-3" href="#carousel_46a2" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-30 u-block-e534-4" href="#carousel_46a2" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+        <span class="sr-only">Next</span>
+      </a>
+    </section>
+    <section class="u-clearfix u-image u-shading u-section-3" id="sec-9a7f" data-image-width="1200" data-image-height="1067">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-center u-custom-font u-text u-text-white u-text-1">SHAH ALAM</h1>
+        <p class="u-text u-text-2">Shah Alam terletak di Negeri Selangor yang merupakan di antara 14 buah negeri di Malaysia. Terletak di Pantai Barat Semenanjung Malaysia, Shah Alam terletak 25 km dari Kuala Lumpur, ibu negara Malaysia dan 15 km dari Pelabuhan Klang. Ia dikelilingi oleh Bandaraya seperti Subang Jaya (Bandar Satelit), Klang (Bandar Di Raja) dan berhampiran dengan Putrajaya (Bandar Pengurusan) dan Cyberjaya.<br>
+          <br> Setiap seksyen di Shah Alam mempunyai tema dan penamaan nama bagi jalan masing-masing yang melambangkan identiti Shah Alam sebagai sebuah bandar raya moden tetapi masih mengekalkan ciri tempatan.<br>
+        </p>
+        <a href="SHAH-ALAM.html" class="u-active-palette-2-base u-btn u-btn-rectangle u-button-style u-hover-palette-3-light-1 u-palette-2-base u-btn-1">SELANJUTNYA &gt;</a>
+        <img src="images/Untitled82_20200824093322.png" alt="" class="u-image u-image-default u-image-1" data-image-width="546" data-image-height="891">
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-shading u-section-4" id="carousel_370f" data-image-width="1500" data-image-height="1001">
+      <div class="u-clearfix u-gutter-30 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-20 u-white u-layout-cell-1">
+              <div class="u-border-3 u-border-palette-2-base u-container-layout u-valign-bottom u-container-layout-1">
+                <span class="u-border-2 u-border-palette-2-base u-icon u-icon-circle u-spacing-21 u-text-palette-2-base u-icon-1">
+                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a634"></use></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" id="svg-a634"><g><path d="m56 96h80c27.57 0 50-22.43 50-50 0-5.523-4.477-10-10-10h-80c-27.57 0-50 22.43-50 50 0 5.523 4.477 10 10 10zm40-40.01h68.287c-4.128 11.651-15.249 20.01-28.287 20.01h-68.287c4.128-11.641 15.249-20 28.287-20.01z"></path><path d="m216 96h120c15.637 0 30.402-7.537 39.792-20h40.208c27.57 0 50-22.43 50-50 0-5.523-4.477-10-10-10h-120c-15.637 0-30.402 7.537-39.792 20h-40.208c-27.57 0-50 22.43-50 50 0 5.523 4.477 10 10 10zm40-40h45.55c3.561 0 6.853-1.893 8.643-4.971 5.476-9.41 15.123-15.029 25.807-15.039h108.287c-4.128 11.651-15.249 20.01-28.287 20.01h-45.55c-3.561 0-6.853 1.893-8.643 4.971-5.476 9.41-15.123 15.029-25.807 15.029h-108.287c4.128-11.641 15.249-20 28.287-20z"></path><circle cx="502" cy="337" r="10"></circle><path d="m506.816 237.236c-3.197-1.756-7.097-1.633-10.176.322l-110.64 70.248v-61.806c0-3.648-1.986-7.006-5.184-8.764-3.196-1.756-7.097-1.633-10.176.322l-110.64 70.248v-61.806c0-3.688-2.029-7.076-5.28-8.816-1.465-.784-3.071-1.156-4.675-1.163-1.908-20.98-7.551-83.046-10.086-110.927-.469-5.151-4.787-9.094-9.959-9.094h-40c-5.172 0-9.49 3.943-9.959 9.094-1.889 20.781-13.707 150.818-15.047 165.559l-24.994 16.662v-61.315c0-3.688-2.03-7.077-5.282-8.817-3.251-1.739-7.197-1.549-10.266.497l-13.445 8.963c-2.311-25.425-8.884-97.74-11.048-121.549-.469-5.151-4.787-9.094-9.959-9.094h-40c-5.172 0-9.49 3.943-9.959 9.094-.938 10.318-15.269 168-16.338 179.758l-19.248 12.826c-2.783 1.855-4.455 4.978-4.455 8.322v160c0 5.523 4.477 10 10 10h492c5.523 0 10-4.477 10-10v-104c0-5.523-4.477-10-10-10s-10 4.477-10 10v34h-66v-50c0-5.523-4.477-10-10-10h-120c-5.523 0-10 4.477-10 10v50h-66v-50c0-5.523-4.477-10-10-10h-120c-5.523 0-10 4.477-10 10v50h-60v-84.647c146.203-97.469-28.398 18.932 100-66.666v61.313c0 3.688 2.03 7.077 5.281 8.817 3.251 1.739 7.196 1.55 10.266-.497l104.453-69.638v61.318c0 3.648 1.986 7.006 5.184 8.764 3.196 1.757 7.097 1.633 10.176-.322l110.64-70.248v61.806c0 3.648 1.986 7.006 5.184 8.764 3.196 1.757 7.097 1.633 10.176-.322l110.64-70.248v27.806c0 5.523 4.477 10 10 10s10-4.477 10-10v-46c0-3.648-1.986-7.006-5.184-8.764zm-14.816 198.764v40h-66v-40zm-86 40h-40v-100h40zm-100-100h40v100h-40zm-20 60v40h-66v-40zm-86 40h-40v-100h40zm-100-100h40v100h-40zm-20 60v40h-60v-40zm-24.504-260h29.008l7.568 83.265-46.991 31.326zm25.373-40 1.818 20h-25.373l1.818-20zm140 0 1.818 20h-25.373l1.818-20zm-25.373 40h29.009l6.427 70.693-44.561 29.708z"></path>
+</g></svg>
+                </span>
+                <div class="u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-palette-2-base u-group-1">
+                  <div class="u-container-layout u-valign-top u-container-layout-2">
+                    <h5 class="u-align-center u-text u-text-1">About Us</h5>
+                    <p class="u-align-center u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-layout-cell u-size-20 u-white u-layout-cell-2">
+              <div class="u-border-3 u-border-palette-3-base u-container-layout u-valign-bottom u-container-layout-3">
+                <span class="u-border-2 u-border-palette-3-base u-icon u-icon-circle u-spacing-21 u-text-palette-3-base u-icon-2">
+                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 467.56 467.56" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a57f"></use></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 467.56 467.56" x="0px" y="0px" id="svg-a57f" style="enable-background:new 0 0 467.56 467.56;"><g><g><path d="M419.272,189.403h-64.52c-9.52,0.035-18.496,4.438-24.352,11.944c-0.072-0.12-0.104-0.264-0.184-0.384l-25.728-38.584    c-15.276-22.982-35.21-42.497-58.512-57.28l-7.384-4.704c-31.8-20.253-68.722-31.005-106.424-30.992H99.56    c-2.906,0.001-5.583,1.579-6.992,4.12L76,103.347L17.944,88.835c-4.286-1.074-8.631,1.53-9.704,5.816    c-0.094,0.376-0.161,0.758-0.2,1.144l-8,80c-0.393,3.948,2.167,7.588,6.016,8.552l32,8c0.635,0.167,1.288,0.253,1.944,0.256    c2.904,0,5.581-1.574,6.992-4.112l12.824-23.088l7.744,12.896v59.104h-40c-4.418,0-8,3.582-8,8v56h-8c-4.418,0-8,3.582-8,8v48    c0,4.418,3.582,8,8,8h24c-0.204,17.884,14.128,32.547,32.012,32.752c16.947,0.194,30.993-12.669,32.593-29.235    c0.46,4.431,1.854,8.836,4.276,12.918c8.957,15.097,28.456,20.074,43.553,11.118c9.717-5.765,15.643-16.255,15.566-27.553h200    c0,17.673,14.327,32,32,32c17.673,0,32-14.327,32-32h32c4.418,0,8-3.582,8-8V237.691    C467.529,211.035,445.928,189.434,419.272,189.403z M291.176,171.251l23.024,34.56l-35.344,63.592h-34.792    c-11.103-0.013-22.181-1.041-33.096-3.072l64.64-114.92C281.248,157.658,286.45,164.287,291.176,171.251z M230,113.899    l7.384,4.696c9.497,6.101,18.407,13.069,26.616,20.816l-69.24,123.088c-29.965-8.285-57.259-24.223-79.2-46.248v-21.968    L177.4,91.211C196.021,95.948,213.775,103.605,230,113.899z M104.264,85.403h27.904c9.599,0.025,19.181,0.808,28.656,2.344    l-46.688,77.816c-4.215-12.445-17.722-19.117-30.167-14.902c-3.95,1.338-7.479,3.69-10.233,6.822l-4.936-8.24L104.264,85.403z     M123.56,285.403c4.418,0,8,3.582,8,8v8h-48v-128c0-4.418,3.582-8,8-8s8,3.582,8,8v88    C99.56,274.658,110.305,285.403,123.56,285.403z M36,175.339l-19.344-4.8l6.4-63.912l44.888,11.2L36,175.339z M35.56,253.403h32    v16h-32V253.403z M35.56,285.403h32v16h-32V285.403z M67.56,381.403c-8.837,0-16-7.163-16-16s7.163-16,16-16s16,7.163,16,16    S76.396,381.403,67.56,381.403z M131.56,381.403c-8.837,0-16-7.163-16-16s7.163-16,16-16s16,7.163,16,16    S140.396,381.403,131.56,381.403z M323.56,349.403H159.112c-8.957-15.097-28.456-20.074-43.553-11.118    c-9.026,5.355-14.431,14.48-15.407,24.178c-1.642-16.173-15.2-28.882-31.84-29.072C56.684,333.258,45.878,339.37,40,349.403H19.56    v-32h304V349.403z M323.56,301.403h-176v-8c0-13.255-10.745-24-24-24c-4.418,0-8-3.582-8-8v-23.432    c24.569,21.13,54.03,35.785,85.704,42.632l1.272,0.712l0.208-0.384c13.578,2.936,27.428,4.435,41.32,4.472h39.496    c2.906-0.002,5.583-1.579,6.992-4.12l33.008-59.408V301.403z M395.56,381.403c-8.837,0-16-7.163-16-16s7.163-16,16-16    s16,7.163,16,16S404.396,381.403,395.56,381.403z M451.56,317.403h-16v16h16v16h-28.448    c-8.677-15.219-28.048-20.522-43.267-11.845c-4.939,2.816-9.03,6.907-11.845,11.845h-28.44v-128.8c0-8.395,6.805-15.2,15.2-15.2    h64.52c11.422,0.038,21.968,6.127,27.712,16H363.56c-4.418,0-8,3.582-8,8v48c0,4.418,3.582,8,8,8h44.688l13.656,13.656    c1.5,1.5,3.534,2.344,5.656,2.344h24V317.403z M451.56,237.691v47.712h-20.688l-13.656-13.656c-1.5-1.5-3.534-2.344-5.656-2.344    h-40v-32h80C451.528,237.499,451.56,237.595,451.56,237.691z"></path>
+</g>
+</g></svg>
+                </span>
+                <div class="u-align-center u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-palette-3-base u-group-2">
+                  <div class="u-container-layout u-valign-top u-container-layout-4">
+                    <h5 class="u-align-center u-text u-text-3">Cement</h5>
+                    <p class="u-align-center u-text u-text-4">Sample text. Click to select the text box. Click again or <a href="https://nicepage.com" class="u-border-1 u-border-white u-btn u-button-style u-none u-text-body-alt-color u-btn-1">double click</a> to start editing the text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-layout-cell u-right-cell u-size-20 u-white u-layout-cell-3">
+              <div class="u-border-3 u-border-palette-4-base u-container-layout u-valign-bottom u-container-layout-5">
+                <span class="u-border-2 u-border-palette-4-base u-icon u-icon-circle u-spacing-21 u-text-palette-4-base u-icon-3">
+                  <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-3fd6"></use></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-3fd6" style="enable-background:new 0 0 512 512;"><g><g><g><path d="M512,59.733v-51.2c0-0.109-0.058-0.2-0.062-0.308c-0.016-1.014-0.216-2.016-0.588-2.959l-0.013-0.022     c-0.032-0.078-0.093-0.135-0.127-0.211c-0.381-0.832-0.896-1.596-1.524-2.262c-0.207-0.207-0.424-0.403-0.651-0.587     c-0.538-0.473-1.135-0.876-1.776-1.197c-0.264-0.143-0.535-0.272-0.813-0.385c-0.949-0.38-1.958-0.584-2.98-0.602H230.4     c-2.263,0.001-4.433,0.9-6.033,2.5L2.503,224.364L2.49,224.38c-0.686,0.71-1.242,1.535-1.643,2.437     c-0.392,0.978-0.641,2.007-0.741,3.056C0.094,230.057,0,230.213,0,230.4v51.2c0,4.713,3.82,8.533,8.533,8.533h64     c21.198,0.023,38.377,17.202,38.4,38.4v9.267L2.503,446.231c-1.591,1.608-2.489,3.774-2.503,6.036v51.2     C0,508.18,3.82,512,8.533,512H281.6c1.151,0,2.289-0.234,3.347-0.688c0.115-0.049,0.197-0.155,0.31-0.209     c0.906-0.418,1.732-0.992,2.44-1.696l0.082-0.057L458.3,330.3l51.2-51.2c1.6-1.6,2.5-3.77,2.5-6.033v-51.2     c0-0.109-0.058-0.2-0.062-0.308c-0.016-1.014-0.216-2.016-0.588-2.959l-0.013-0.022c-0.032-0.078-0.093-0.135-0.127-0.211     c-0.838-1.745-2.226-3.166-3.95-4.046c-0.264-0.144-0.535-0.272-0.813-0.386c-0.949-0.38-1.958-0.584-2.98-0.602h-64     c-0.727,0.048-1.444,0.193-2.133,0.431c-0.689-0.237-1.406-0.382-2.133-0.431c-19.906-0.061-36.451-15.352-38.076-35.192     l112.37-112.369C511.088,64.165,511.987,61.997,512,59.733z M233.933,17.067h248.933l-204.8,204.8H29.133L233.933,17.067z      M110.933,361.933v43.4c-0.023,21.198-17.202,38.377-38.4,38.4h-43.4L110.933,361.933z M273.067,494.933h-256V460.8h55.467     c30.619-0.035,55.431-24.848,55.467-55.467v-76.8c-0.035-30.619-24.848-55.431-55.467-55.467H17.067v-34.133h256v34.133H217.6     c-30.619,0.035-55.431,24.848-55.467,55.467v76.8c0.035,30.619,24.848,55.431,55.467,55.467h55.467V494.933z M494.933,269.533     l-48.85,48.85l-155.95,163.748v-26.453L458.3,279.1l36.634-36.633V269.533z M435.2,230.4c0.727-0.048,1.444-0.193,2.133-0.431     c0.689,0.237,1.406,0.382,2.133,0.431h43.4l-36.783,36.783l-168.142,176.55H217.6c-21.198-0.023-38.377-17.202-38.4-38.4v-76.8     c0.023-21.198,17.202-38.377,38.4-38.4h64c2.263-0.007,4.432-0.906,6.036-2.503l95.032-95.032     C390.267,215.156,411.397,230.361,435.2,230.4z M494.933,56.2L382.236,168.897l-0.005,0.005L290.133,261v-27.067l204.8-204.8     V56.2z"></path><path d="M216.606,401.241c-3.202-1.329-6.89-0.59-9.331,1.872c-1.559,1.636-2.442,3.799-2.475,6.059     c0,4.713,3.821,8.533,8.533,8.533c4.713,0,8.533-3.82,8.533-8.533C221.887,405.704,219.808,402.57,216.606,401.241z"></path><path d="M249.481,365.14c-2.963-0.72-6.085,0.196-8.19,2.402h0l-8.533,8.942c-3.24,3.412-3.107,8.803,0.298,12.051     s8.796,3.128,12.052-0.268l8.533-8.942c2.105-2.206,2.873-5.368,2.015-8.294C254.798,368.106,252.444,365.86,249.481,365.14z"></path><path d="M275.425,331.783l-8.533,8.942c-3.254,3.41-3.127,8.813,0.283,12.067s8.813,3.127,12.067-0.283l8.533-8.942     c3.254-3.41,3.127-8.813-0.283-12.067C284.081,328.246,278.679,328.373,275.425,331.783z"></path><path d="M309.558,296.025l-8.533,8.942c-2.358,2.471-3.016,6.11-1.672,9.25c1.344,3.14,4.431,5.176,7.847,5.175     c2.333,0.003,4.566-0.952,6.175-2.642l8.533-8.942c3.254-3.41,3.127-8.813-0.283-12.067     C318.215,292.488,312.812,292.615,309.558,296.025z"></path><path d="M351.889,257.848c-2.968-0.719-6.095,0.204-8.198,2.419l-8.533,8.942c-2.358,2.471-3.016,6.11-1.672,9.25     c1.344,3.14,4.431,5.176,7.847,5.175c2.333,0.003,4.566-0.952,6.175-2.642l8.533-8.942c2.114-2.205,2.888-5.371,2.031-8.302     S354.858,258.567,351.889,257.848z"></path><path d="M372.194,231.428c-3.202,1.329-5.281,4.464-5.261,7.931c-0.04,2.249,0.856,4.413,2.475,5.975     c1.596,1.629,3.778,2.55,6.059,2.558c2.28-0.008,4.463-0.93,6.059-2.558c1.617-1.563,2.513-3.727,2.475-5.975     c-0.018-2.262-0.904-4.431-2.475-6.059C379.084,230.838,375.396,230.098,372.194,231.428z"></path>
+</g>
+</g>
+</g></svg>
+                </span>
+                <div class="u-align-center u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-palette-4-base u-group-3">
+                  <div class="u-container-layout u-valign-top u-container-layout-6">
+                    <h5 class="u-text u-text-5">Steel</h5>
+                    <p class="u-text u-text-6">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-image u-shading u-section-5" id="carousel_ab11" data-image-width="1001" data-image-height="1500">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-custom-font u-font-oswald u-text u-text-1">JABATAN PERANCANGAN MBSA</h1>
+        <p class="u-text u-text-2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+        <div class="u-container-style u-group u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h4 class="u-align-center u-custom-font u-font-oswald u-text u-text-3">TPr. NURUL SHEEMA BINTI ABDUL RAHMAN</h4>
+            <h5 class="u-align-center u-custom-font u-text u-text-default u-text-font u-text-palette-2-base u-text-4">TIMBALAN PENGARAH 1 JABATAN PERANCANGAN MBSA /&nbsp;</h5>
+          </div>
+        </div>
+        <div alt="" class="u-image u-image-circle u-image-1" data-image-width="875" data-image-height="1120"></div>
+        <a href="MENGENAI-KAMI.html" class="u-active-palette-3-base u-btn u-button-style u-hover-palette-1-base u-palette-3-base u-btn-1">SELANJUTNYA &gt;</a>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-shading u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-section-6" id="carousel_6876" data-image-width="1500" data-image-height="1001">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-white u-text-1">HUBUNGI KAMI</h2>
+        <div class="u-border-7 u-border-palette-2-base u-line u-line-horizontal u-line-1"></div>
+        <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-size-30">
+                    <div class="u-layout-row">
+                      <div class="u-align-center u-container-style u-layout-cell u-left-cell u-palette-3-light-1 u-size-30 u-layout-cell-1">
+                        <div class="u-border-2 u-border-grey-75 u-container-layout u-valign-middle u-container-layout-1">
+                          <span class="u-border-2 u-border-palette-2-base u-icon u-icon-circle u-spacing-10 u-text-palette-2-base u-icon-1">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7ee5"></use></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7ee5" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" class="u-svg-content"><g><g><path d="M256,0C156.748,0,76,80.748,76,180c0,33.534,9.289,66.26,26.869,94.652l142.885,230.257    c2.737,4.411,7.559,7.091,12.745,7.091c0.04,0,0.079,0,0.119,0c5.231-0.041,10.063-2.804,12.75-7.292L410.611,272.22    C427.221,244.428,436,212.539,436,180C436,80.748,355.252,0,256,0z M384.866,256.818L258.272,468.186l-129.905-209.34    C113.734,235.214,105.8,207.95,105.8,180c0-82.71,67.49-150.2,150.2-150.2S406.1,97.29,406.1,180    C406.1,207.121,398.689,233.688,384.866,256.818z"></path>
+</g>
+</g><g><g><path d="M256,90c-49.626,0-90,40.374-90,90c0,49.309,39.717,90,90,90c50.903,0,90-41.233,90-90C346,130.374,305.626,90,256,90z     M256,240.2c-33.257,0-60.2-27.033-60.2-60.2c0-33.084,27.116-60.2,60.2-60.2s60.1,27.116,60.1,60.2    C316.1,212.683,289.784,240.2,256,240.2z"></path>
+</g>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                          </span>
+                          <h5 class="u-text u-text-grey-75 u-text-2">Address:</h5>
+                          <p class="u-text u-text-3"> Tingkat 9 &amp; 19, Lif A,<br>Wisma MBSA,<br>Persiaran Perbandaran,&nbsp;<br> 40000&nbsp;Shah Al​am,<br>Selangor. 
+                          </p>
+                        </div>
+                      </div>
+                      <div class="u-container-style u-layout-cell u-palette-5-dark-3 u-size-30 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                          <span class="u-border-2 u-border-palette-2-base u-icon u-icon-circle u-spacing-10 u-text-palette-2-base u-icon-2">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 479.058 479.058" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b327"></use></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg-b327" enable-background="new 0 0 479.058 479.058" viewBox="0 0 479.058 479.058" class="u-svg-content"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"></path></svg>
+                          </span>
+                          <h5 class="u-align-center u-text u-text-grey-40 u-text-4">Email:</h5>
+                          <a href="https://nicepage.com" class="u-border-active-none u-border-hover-none u-btn u-btn-rectangle u-button-style u-none u-text-body-alt-color u-text-hover-palette-2-base u-btn-1">pelaburan@mbsa.gov.my</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-size-30">
+                    <div class="u-layout-row">
+                      <div class="u-container-style u-layout-cell u-left-cell u-palette-5-dark-3 u-size-30 u-layout-cell-3">
+                        <div class="u-container-layout u-valign-bottom-lg u-valign-bottom-xl u-container-layout-3">
+                          <span class="u-border-2 u-border-palette-2-base u-icon u-icon-circle u-spacing-10 u-text-palette-2-base u-icon-3">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 384 384" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-2291"></use></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-2291" x="0px" y="0px" viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve" class="u-svg-content"><g><g><path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.906-3.719-23.323-0.833-30.438,6.417l-43.177,32.594    c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448    c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.812C13.823,0,0,13.823,0,30.812    C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z     M362.667,353.188c0,5.229-4.25,9.479-9.479,9.479c-182.99,0-331.854-148.865-331.854-331.854c0-5.229,4.25-9.479,9.479-9.479    h70.521c5.229,0,9.479,4.25,9.479,9.479c0,25.802,4.052,51.125,11.979,75.115c1.104,3.542,0.208,7.208-3.375,10.938L82.75,165.427    c-2.458,3.26-2.844,7.625-1,11.26c29.927,58.823,66.292,95.188,125.531,125.542c3.604,1.885,8.021,1.49,11.292-0.979    l49.677-37.635c2.51-2.51,6.271-3.406,9.667-2.25c24.156,7.979,49.479,12.021,75.271,12.021c5.229,0,9.479,4.25,9.479,9.479    V353.188z"></path>
+</g>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                          </span>
+                          <h5 class="u-align-center u-text u-text-grey-40 u-text-5">Call us:</h5>
+                          <p class="u-align-center u-text u-text-6">telefon: 03-5522 2867</p>
+                          <p class="u-align-center u-text u-text-default u-text-7">faks: ​​03-551​3 9471 </p>
+                        </div>
+                      </div>
+                      <div class="u-container-style u-layout-cell u-palette-3-light-1 u-size-30 u-layout-cell-4">
+                        <div class="u-container-layout u-valign-top-lg u-valign-top-xl u-container-layout-4">
+                          <span class="u-border-2 u-border-palette-2-base u-icon u-icon-circle u-spacing-10 u-text-palette-2-base u-icon-4">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 55 55" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e6b7"></use></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 55 55" x="0px" y="0px" id="svg-e6b7" style="enable-background:new 0 0 55 55;"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg>
+                          </span>
+                          <h5 class="u-align-center u-text u-text-grey-40 u-text-8">Contact Us</h5>
+                          <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                            <a class="u-social-url" target="_blank" href="https://facebook.com/shahalamcitycouncil">
+                              <span class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-5">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d594"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-d594"><path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg>
+                              </span>
+                            </a>
+                            <a class="u-social-url" target="_blank" href="https://twitter.com/sacitycouncil">
+                              <span class="u-icon u-icon-circle u-social-twitter u-social-type-logo u-icon-6">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5125"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-5125"><path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg>
+                              </span>
+                            </a>
+                            <a class="u-social-url" target="_blank" href="https://www.instagram.com/sacitycouncil/">
+                              <span class="u-icon u-icon-circle u-social-instagram u-social-type-logo u-icon-7">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-c0ec"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-c0ec"><path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg>
+                              </span>
+                            </a>
+                            <a class="u-social-url" target="_blank" href="https://youtube.com/user/shahalamcitycouncil">
+                              <span class="u-icon u-icon-circle u-social-type-logo u-social-youtube u-icon-8">
+                                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cea9"></use></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-cea9"><path d="M82.3,24H29.7C19.3,24,11,32.5,11,43v26.7c0,10.5,8.3,19,18.7,19h52.5c10.3,0,18.7-8.5,18.7-19V43 C101,32.5,92.7,24,82.3,24L82.3,24z M69.7,57.6L45.1,69.5c-0.7,0.2-1.4-0.2-1.4-0.8V44.1c0-0.7,0.8-1.3,1.4-0.8l24.6,12.6 C70.4,56.2,70.4,57.3,69.7,57.6L69.7,57.6z"></path></svg>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="u-size-30 u-size-60-md">
+                <div class="u-layout-col">
+                  <div class="u-container-style u-layout-cell u-right-cell u-size-60 u-layout-cell-5">
+                    <div class="u-container-layout u-container-layout-5">
+                      <div class="u-expanded u-grey-light-2 u-map">
+                        <div class="embed-responsive">
+                          <iframe class="embed-responsive-item" src="//maps.google.com/maps?output=embed&amp;q=Wisma%20MBSA%2C%0APersiaran%20Perbandaran%2C%20%0A%E2%80%8B40000%20Shah%20Al%E2%80%8Bam%2C%0ASelangor.%E2%80%8B%E2%80%8B%E2%80%8B&amp;z=16&amp;t=k" data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWFkZHJlc3MlMjIlMkMlMjJhZGRyZXNzJTIyJTNBJTIyV2lzbWElMjBNQlNBJTJDJTVDblBlcnNpYXJhbiUyMFBlcmJhbmRhcmFuJTJDJTIwJTVDbiVFMiU4MCU4QjQwMDAwJTIwU2hhaCUyMEFsJUUyJTgwJThCYW0lMkMlNUNuU2VsYW5nb3IuJUUyJTgwJThCJUUyJTgwJThCJUUyJTgwJThCJTIyJTJDJTIyem9vbSUyMiUzQTE2JTJDJTIydHlwZUlkJTIyJTNBJTIyc2F0ZWxsaXRlJTIyJTJDJTIybGFuZyUyMiUzQSUyMiUyMiU3RA=="></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-palette-2-base u-footer" id="sec-be99"><div class="u-clearfix u-sheet u-sheet-1">
+        <blockquote class="u-border-none u-text u-text-1">"Bersama menjadikan Shah Alam bandara​​ya bestari, cemerlang dan bertaraf dunia."</blockquote>
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+          <a class="u-social-url" target="_blank" href="">
+            <span class="u-icon u-icon-circle u-social-facebook u-social-type-logo u-icon-1">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0309"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-0309"><path d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2 c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" target="_blank" href="">
+            <span class="u-icon u-icon-circle u-social-twitter u-social-type-logo u-icon-2">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-69b7"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-69b7"><path d="M92.2,38.2c0,0.8,0,1.6,0,2.3c0,24.3-18.6,52.4-52.6,52.4c-10.6,0.1-20.2-2.9-28.5-8.2 c1.4,0.2,2.9,0.2,4.4,0.2c8.7,0,16.7-2.9,23-7.9c-8.1-0.2-14.9-5.5-17.3-12.8c1.1,0.2,2.4,0.2,3.4,0.2c1.6,0,3.3-0.2,4.8-0.7 c-8.4-1.6-14.9-9.2-14.9-18c0-0.2,0-0.2,0-0.2c2.5,1.4,5.4,2.2,8.4,2.3c-5-3.3-8.3-8.9-8.3-15.4c0-3.4,1-6.5,2.5-9.2 c9.1,11.1,22.7,18.5,38,19.2c-0.2-1.4-0.4-2.8-0.4-4.3c0.1-10,8.3-18.2,18.5-18.2c5.4,0,10.1,2.2,13.5,5.7c4.3-0.8,8.1-2.3,11.7-4.5 c-1.4,4.3-4.3,7.9-8.1,10.1c3.7-0.4,7.3-1.4,10.6-2.9C98.9,32.3,95.7,35.5,92.2,38.2z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" target="_blank" href="">
+            <span class="u-icon u-icon-circle u-social-instagram u-social-type-logo u-icon-3">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e359"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-e359"><path d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path><path d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path><path d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7 V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7 c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path></svg>
+            </span>
+          </a>
+          <a class="u-social-url" target="_blank" href="#">
+            <span class="u-icon u-icon-circle u-social-type-logo u-social-youtube u-icon-4">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ecf9"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 112 112" x="0px" y="0px" id="svg-ecf9"><path d="M82.3,24H29.7C19.3,24,11,32.5,11,43v26.7c0,10.5,8.3,19,18.7,19h52.5c10.3,0,18.7-8.5,18.7-19V43 C101,32.5,92.7,24,82.3,24L82.3,24z M69.7,57.6L45.1,69.5c-0.7,0.2-1.4-0.2-1.4-0.8V44.1c0-0.7,0.8-1.3,1.4-0.8l24.6,12.6 C70.4,56.2,70.4,57.3,69.7,57.6L69.7,57.6z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div></footer>
+    <span style="height: 64px; width: 64px; margin-left: 0; margin-right: auto; margin-top: 0; background-image: none; right: 20px; bottom: 20px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-50 u-palette-3-base u-spacing-15" data-href="#">
+      <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+      <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
+  </body>
+</html>
